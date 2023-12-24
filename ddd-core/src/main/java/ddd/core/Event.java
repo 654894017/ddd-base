@@ -2,6 +2,8 @@ package ddd.core;
 
 import java.io.Serializable;
 
-public interface Event extends Serializable {
-    String eventId();
+public abstract class Event extends DTO {
+
+    public abstract String eventId();
+
 }
