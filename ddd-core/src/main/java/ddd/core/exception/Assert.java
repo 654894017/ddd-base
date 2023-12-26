@@ -8,7 +8,7 @@ public abstract class Assert {
 
     /**
      * Assert a boolean expression, throwing {@code BizException}
-     *
+     * <p>
      * for example
      *
      * <pre class="code">Assert.isTrue(i != 0, errorCode.B_ORDER_illegalNumber, "The order number can not be zero");</pre>
@@ -26,11 +26,11 @@ public abstract class Assert {
 
     /**
      * Assert a boolean expression, if expression is true, throwing {@code BizException}
-     *
+     * <p>
      * for example
      *
      * <pre class="code">Assert.isFalse(i == 0, errorCode.B_ORDER_illegalNumber, "The order number can not be zero");</pre>
-     *
+     * <p>
      * This is more intuitive than isTure.
      */
     public static void isFalse(boolean expression, String errorCode, String errMessage) {

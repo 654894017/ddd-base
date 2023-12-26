@@ -6,17 +6,11 @@ public abstract class PageQuery extends Query {
     public static final String DESC = "DESC";
     private static final long serialVersionUID = 1L;
     private static final int DEFAULT_PAGE_SIZE = 10;
-
     private int pageSize = DEFAULT_PAGE_SIZE;
-
     private int pageIndex = 1;
-
     private String orderBy;
-
     private String orderDirection = DESC;
-
     private String groupBy;
-
     private boolean needTotalCount = true;
 
     public int getPageIndex() {
